@@ -1,0 +1,11 @@
+﻿@model Draw
+
+@foreach (Card c in Model.cards)
+{
+    <div class="column">
+        <img src="@c.image" style="padding: 4px" /><br />
+        <center>
+            @c.value <br />of<br /> @c.suit
+        </center>
+    </div>
+}
